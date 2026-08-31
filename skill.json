@@ -1,0 +1,44 @@
+{
+  "name": "genpark-autonomous-legal-contract-clause-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous legal contract clause synthesizer generating jurisdiction-compliant agreements and liability protections.",
+  "author": "genpark",
+  "category": "legal-tech",
+  "tags": [
+    "contract-generator",
+    "legal-nlp",
+    "clause-synthesizer",
+    "nda-generator",
+    "jurisdiction-compliance"
+  ],
+  "inputs": {
+    "agreement_type": {
+      "type": "string"
+    },
+    "governing_jurisdiction": {
+      "type": "string"
+    },
+    "confidentiality_duration_years": {
+      "type": "integer"
+    },
+    "liability_cap_multiplier": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "contract_id": {
+      "type": "string"
+    },
+    "clauses_structured_count": {
+      "type": "integer"
+    },
+    "statutory_compliance_score_pct": {
+      "type": "number"
+    },
+    "contract_markdown_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
